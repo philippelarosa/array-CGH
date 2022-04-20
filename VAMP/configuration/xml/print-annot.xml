@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<PrintPageTemplate>
+<TemplateName>Standard Annot</TemplateName>
+<TemplateFormat>
+<PageOrientation>1</PageOrientation>
+<PageImageable width="597.0" height="844.0" img_x="72.0" img_y="72.0" img_width="452.0" img_height="699.0"/>
+</TemplateFormat>
+<PrintTextArea>
+<AreaName>Title</AreaName>
+<AreaPanelNum>0</AreaPanelNum>
+<AreaRect x="72" y="72" width="452" height="45"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>false</AreaHasBorder>
+<AreaFGColor>-16777216</AreaFGColor>
+<AreaTextTemplate>
+
+@#Project# [#Team#]
+@#Title#
+</AreaTextTemplate>
+<AreaFont>MonoSpaced:BOLD:14</AreaFont>
+</PrintTextArea>
+<PrintArea>
+<AreaName>GraphElements</AreaName>
+<AreaPanelNum>0</AreaPanelNum>
+<AreaRect x="72" y="117" width="377" height="519"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>false</AreaHasBorder>
+</PrintArea>
+<PrintTextArea>
+<AreaName>Pagenum</AreaName>
+<AreaPanelNum>0</AreaPanelNum>
+<AreaRect x="444" y="741" width="80" height="30"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>false</AreaHasBorder>
+<AreaFGColor>-16777216</AreaFGColor>
+<AreaTextTemplate>
+
+#PrintDate#
+Page #PageNum#/#PageCount#
+</AreaTextTemplate>
+</PrintTextArea>
+<PrintHTMLArea>
+<AreaName>HTML 1</AreaName>
+<AreaPanelNum>0</AreaPanelNum>
+<AreaRect x="72" y="636" width="370" height="180"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>false</AreaHasBorder>
+<AreaHTMLTemplate>
+
+&lt;table bgcolor=white width=100% border=0 cellpadding=0 cellspacing=0>
+      &lt;tr>
+        &lt;td width=10 height=3 style="font-size:3; background-color: #AnnotRGB[1]#;">&amp;nbsp;&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotName[1]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotOP[1]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotValue[1]#&lt;/td>
+      &lt;/tr>
+      &lt;tr>&lt;td style="font-size:3;" height=3>&amp;nbsp;&lt;/td>&lt;/tr>
+      &lt;tr>
+        &lt;td width=10 height=3 style="font-size:3; background-color: #AnnotRGB[2]#;">&amp;nbsp;&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotName[2]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotOP[2]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotValue[2]#&lt;/td>
+      &lt;/tr>
+      &lt;tr>&lt;td style="font-size:3;" height=3>&amp;nbsp;&lt;/td>&lt;/tr>
+      &lt;tr>
+        &lt;td width=10 height=3 style="font-size:3; background-color: #AnnotRGB[3]#;">&amp;nbsp;&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotName[3]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotOP[3]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotValue[3]#&lt;/td>
+      &lt;/tr>
+      &lt;tr>&lt;td style="font-size:3;" height=3>&amp;nbsp;&lt;/td>&lt;/tr>
+      &lt;tr>
+        &lt;td width=10 height=3 style="font-size:3; background-color: #AnnotRGB[4]#;">&amp;nbsp;&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotName[4]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotOP[4]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotValue[4]#&lt;/td>
+      &lt;/tr>
+      &lt;tr>&lt;td style="font-size:3;" height=3>&amp;nbsp;&lt;/td>&lt;/tr>
+
+      &lt;tr>
+        &lt;td width=10 height=3 style="font-size:3; background-color: #AnnotRGB[5]#;">&amp;nbsp;&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotName[5]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotOP[5]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotValue[5]#&lt;/td>
+      &lt;/tr>
+      &lt;tr>&lt;td style="font-size:3;" height=3>&amp;nbsp;&lt;/td>&lt;/tr>
+
+      &lt;tr>
+        &lt;td width=10 height=3 style="font-size:3; background-color: #AnnotRGB[6]#;">&amp;nbsp;&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotName[6]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotOP[6]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotValue[6]#&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>&lt;td style="font-size:3;" height=3>&amp;nbsp;&lt;/td>&lt;/tr>
+      &lt;tr>
+        &lt;td width=10 height=3 style="font-size:3; background-color: #AnnotRGB[7]#;">&amp;nbsp;&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotName[7]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotOP[7]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotValue[7]#&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>&lt;td style="font-size:3;" height=3>&amp;nbsp;&lt;/td>&lt;/tr>
+      &lt;tr>
+        &lt;td width=10 height=3 style="font-size:3; background-color: #AnnotRGB[8]#;">&amp;nbsp;&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotName[8]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotOP[8]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotValue[8]#&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>&lt;td style="font-size:3;" height=3>&amp;nbsp;&lt;/td>&lt;/tr>
+      &lt;tr>
+        &lt;td width=10 height=3 style="font-size:3; background-color: #AnnotRGB[9]#;">&amp;nbsp;&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotName[9]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotOP[9]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotValue[9]#&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>&lt;td style="font-size:3;" height=3>&amp;nbsp;&lt;/td>&lt;/tr>
+      &lt;tr>
+        &lt;td width=10 height=3 style="font-size:3; background-color: #AnnotRGB[10]#;">&amp;nbsp;&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotName[10]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotOP[10]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotValue[10]#&lt;/td>
+      &lt;/tr>
+
+      &lt;tr>&lt;td style="font-size:3;" height=3>&amp;nbsp;&lt;/td>&lt;/tr>
+      &lt;tr>
+        &lt;td width=10 height=3 style="font-size:3; background-color: #AnnotRGB[11]#;">&amp;nbsp;&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotName[11]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotOP[11]#&lt;/td>
+        &lt;td>&amp;nbsp;&lt;/td>
+        &lt;td>#AnnotValue[11]#&lt;/td>
+      &lt;/tr>
+
+   &lt;/table>
+</AreaHTMLTemplate>
+</PrintHTMLArea>
+<PrintArea>
+<AreaName>Yannot</AreaName>
+<AreaPanelNum>0</AreaPanelNum>
+<AreaRect x="447" y="116" width="80" height="520"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>false</AreaHasBorder>
+</PrintArea>
+</PrintPageTemplate>

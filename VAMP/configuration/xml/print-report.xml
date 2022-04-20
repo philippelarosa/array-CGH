@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<PrintPageTemplate>
+<TemplateName>Standard Report</TemplateName>
+<TemplatePerPage>1</TemplatePerPage>
+<TemplateFileMenu/>
+<TemplateFormat>
+<PageOrientation>0</PageOrientation>
+<PageImageable width="844.0" height="597.0" img_x="73.0" img_y="72.0" img_width="699.0" img_height="452.0"/>
+</TemplateFormat>
+
+<PrintHTMLArea>
+<AreaName>HTML 1</AreaName>
+<AreaPanelNum>0</AreaPanelNum>
+<AreaRect x="65" y="66" width="220" height="70"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>false</AreaHasBorder>
+<AreaHTMLTemplate url="file:///Users/plarosa/Desktop/VAMP/configuration/xml/print-report-harea1.html"/>
+</PrintHTMLArea>
+
+<PrintHTMLArea>
+<AreaName>HTML 3</AreaName>
+<AreaPanelNum>0</AreaPanelNum>
+<AreaRect x="65" y="136" width="220" height="120"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>false</AreaHasBorder>
+<AreaHTMLTemplate url="file:///Users/plarosa/Desktop/VAMP/configuration/xml/print-report-harea2.html"/>
+</PrintHTMLArea>
+
+<PrintHTMLArea>
+<AreaName>HTML 4</AreaName>
+<AreaPanelNum>0</AreaPanelNum>
+<AreaRect x="65" y="256" width="220" height="110"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>false</AreaHasBorder>
+<AreaHTMLTemplate url="file:///Users/plarosa/Desktop/VAMP/configuration/xml/print-report-harea3.html"/>
+</PrintHTMLArea>
+
+<PrintHTMLArea>
+<AreaName>HTML 2</AreaName>
+<AreaPanelNum>0</AreaPanelNum>
+<AreaRect x="65" y="378" width="220" height="155"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>false</AreaHasBorder>
+<AreaHTMLTemplate url="file:///Users/plarosa/Desktop/VAMP/configuration/xml/print-report-harea-comment.html"/>
+</PrintHTMLArea>
+
+<PrintArea>
+<AreaName>GraphElements</AreaName>
+<AreaPanelNum>0</AreaPanelNum>
+<AreaRect x="285" y="71" width="483" height="455"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>true</AreaHasBorder>
+</PrintArea>
+
+<TemplateCSS>file:///Users/plarosa/Desktop/VAMP/configuration/xml/stylesheet.css</TemplateCSS>
+
+</PrintPageTemplate>

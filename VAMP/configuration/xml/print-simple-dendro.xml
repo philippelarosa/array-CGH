@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<PrintPageTemplate>
+<TemplateName>Simple Horizontal Dendrogram</TemplateName>
+<TemplatePrintFlags>10</TemplatePrintFlags>
+<TemplateFormat>
+<PageOrientation>1</PageOrientation>
+<PageImageable width="597.0" height="844.0" img_x="72.0" img_y="72.0" img_width="452.0" img_height="699.0"/>
+</TemplateFormat>
+<PrintArea>
+<AreaName>GraphElements</AreaName>
+<AreaPanelNum>1</AreaPanelNum>
+<AreaRect x="72" y="151" width="455" height="620"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>false</AreaHasBorder>
+</PrintArea>
+<PrintArea>
+<AreaName>Xscale</AreaName>
+<AreaPanelNum>1</AreaPanelNum>
+<AreaRect x="72" y="111" width="455" height="40"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>false</AreaHasBorder>
+</PrintArea>
+<PrintTextArea>
+<AreaName>Text 1</AreaName>
+<AreaPanelNum>0</AreaPanelNum>
+<AreaRect x="72" y="71" width="455" height="40"/>
+<AreaBGColor>-1</AreaBGColor>
+<AreaBDColor>-16777216</AreaBDColor>
+<AreaHasBorder>false</AreaHasBorder>
+<AreaFGColor>-16777216</AreaFGColor>
+<AreaTextTemplate>
+
+</AreaTextTemplate>
+</PrintTextArea>
+</PrintPageTemplate>

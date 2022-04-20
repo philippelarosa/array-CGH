@@ -1,0 +1,67 @@
+<table style="border-style: solid; border-width: 1" width="200" cellpadding="3" cellspacing="0">
+  <tr>
+    <td width="110"><b>ID Echantillon</b></td><td></td>
+  </tr>
+  <tr>
+    <td><b>N° Histo</b></td><td>#NumHisto#</td>
+  </tr>
+ <tr>
+    <td><b>Date</b></td><td>#Date#</td>
+  </tr>
+</table>
+<table><tr><td style="font-size: 2;">&nbsp;</td></tr></table>
+<table style="border-style: solid; border-width: 1" width="200" cellpadding="3" cellspacing="0">
+  <tr>
+    <td width="110"><b>Expérimentateur</b></td><td>#Login#</td>
+  </tr>
+  <tr>
+    <td width="110"><b>Projet</b></td><td>#Project#</td>
+  </tr>
+  <tr>
+    <td><b>Lame</b></td><td>#Alias#</td>
+  </tr>
+ <tr>
+    <td><b>Qualité Manips</b></td><td>#Quality_score#</td>
+  </tr>
+  <tr>
+    <td><b>Nbre Clones Validés</b></td><td>#Analysed_clones#</td>
+  </tr>
+ <tr>
+    <td><b>Critères d'Analyse</b></td><td>#Snr_threshold#/#Amplicon_threshold#/#Replicate_threshold#</td>
+</table>
+
+<table><tr><td style="font-size: 1;">&nbsp;</td></tr></table>
+
+<table width="200" style="border-style: solid; border-width: 1;" cellpadding="3" cellspacing="0">
+ <tr>
+    <td colspan=1 align=center><b>Légende</b></td>
+ </tr>
+ <tr><td>
+   <table width=100% border=0>
+      <tr>
+        <td ><b>Amplicons</b></td>
+        <td width=10 height=10 style="font-size:5; background-color: #CCAmpliconRGB#;">&nbsp;</td>
+        <td width=10>&nbsp;</td>
+        <td width=100> ratio > #CCAmplicon#</td>
+      </tr>
+      <tr>
+       <td<b>Gains</b></td>
+        <td width=10 height=10 style="font-size:5; background-color: #CCMaxRGB#;">&nbsp;</td>
+        <td width=10>&nbsp;</td>
+       <td> #CCNormalMax# &lt; ratio < #CCMax# </td>
+      </tr>
+      <tr>
+        <td><b>Normal</b></td>
+        <td width=10 height=10 style="font-size:5; background-color: #CCNormalRGB#;">&nbsp;</td>
+        <td width=10>&nbsp;</td>
+        <td> #CCNormalMin# &lt; ratio < #CCNormalMax#</td>
+      </tr>
+     <tr>
+       <td<b>Pertes</b></td>
+        <td width=10 height=10 style="font-size:5; background-color: #CCMinRGB#;">&nbsp;</td>
+        <td width=10>&nbsp;</td>
+       <td> ratio &lt; #CCMin#</td>
+     </tr>
+   </table>
+  </td></tr>
+</table>

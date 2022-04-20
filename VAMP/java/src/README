@@ -1,0 +1,9 @@
+
+CGH Interface
+-------------
+
+To sign the applet you must first create a key (only the *first* time):
+make key # and answer to the questions
+
+Then you must launch `make' to recompile and sign the applet:
+make

@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+
+<!--
+  System Configuration file example for the CGH Application
+
+  Eric Viara for Institut Curie, 10/02/04
+-->
+
+<SystemConfig>
+
+ <Parameter key="min:memory" value="200"/>
+
+ 
+
+<TranscriptomeFactory type="XML"/>
+
+<!-- used by Transcriptome XML Factory -->
+<TranscriptomeURLTemplate>
+file:///Users/plarosa/Desktop/VAMP/data/xml/trs/#ProjectId#/#NumHisto#/chr/chr#Chr#.xml
+</TranscriptomeURLTemplate>
+
+<!-- used by LOH XML Factory -->
+<LOHURLTemplate>
+file:///Users/plarosa/Desktop/VAMP/data/xml/microsat/#ProjectId#/#NumHisto#/chr/chr#ChrAlias#.xml
+</LOHURLTemplate>
+
+ <Parameter key="help:URL" value="http://bioinfo-out.curie.fr/vamp/doc"/>
+
+ <PropertyElementMenu object='Region' type='Minimal Region'>
+  <MenuItem type='separator'/>
+
+  <MenuItem type='menu' title='External Links'>
+       <MenuItem
+            type='url'
+            title='Ensembl ContigView'
+	    url='http://www.ensembl.org/Homo_sapiens/contigview?chr=#Chr#&amp;vc_start=#Position Begin#&amp;vc_end=#Position End#'
+            target='_blank'/>
+ </MenuItem>
+
+ </PropertyElementMenu>
+
+
+ <PropertyElementMenu object='DataElement' type='Clone'>
+  <MenuItem type='separator'/>
+
+  <MenuItem type='menu' title='External Links'>
+       <MenuItem
+            type='url'
+            title='NCBI Clone Viewer' 
+	    url='http://www.ncbi.nlm.nih.gov/genome/clone/clname.cgi?stype=Name&amp;list=#Name#'
+            target='_blank'/>
+
+       <MenuItem
+            type='url'
+            title='NCBI Map Viewer' 
+	    url='http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?ORG=hum&amp;query=#Name#&amp;MAPS=cntg-r,clone,sts,genes,comp&amp;CHR=#Chr#&amp;ABS_ZOOM=6M'
+            target='_blank'/>
+
+       <MenuItem
+            type='url'
+            title='Working Draft (UCSC)' 
+	    url='@data'
+            target='_blank'>
+<token>
+http://www.genome.ucsc.edu/cgi-bin/hgTracks?position=chr#Chr#:</token>
+<sub>
+<property>Position</property>
+<token>150000</token>
+</sub>
+<token>-</token>
+<add>
+<property>Position</property>
+<token>150000</token>
+</add>
+       </MenuItem>
+
+       <MenuItem
+            type='url'
+            title='Ensembl ContigView'
+	    url='@data'
+            target='_blank'>
+<token>
+http://www.ensembl.org/Homo_sapiens/contigview?chr=#Chr#&amp;vc_start=</token>
+<sub>
+<property>Position</property>
+<token>150000</token>
+</sub>
+<token>&amp;vc_end=</token>
+<add>
+<property>Position</property>
+<token>150000</token>
+</add>
+       </MenuItem>
+
+       <MenuItem
+            type='url'
+            title='Ensembl CytoView'
+	    url='@data'
+            target='_blank'>
+<token>
+http://www.ensembl.org/Homo_sapiens/cytoview?chr=#Chr#&amp;vc_start=</token>
+<sub>
+<property>Position</property>
+<token>150000</token>
+</sub>
+<token>&amp;vc_end=</token>
+<add>
+<property>Position</property>
+<token>150000</token>
+</add>
+       </MenuItem>
+   </MenuItem>
+
+ </PropertyElementMenu>
+
+ <PropertyElementMenu object='GraphElement'>
+  <MenuItem type='reference'/>
+  <MenuItem type='separator'/>
+  <MenuItem type='array_list'/>
+
+ </PropertyElementMenu>
+
+ <PropertyElementMenu object='DataElement' type='ProbeSet'>
+  <MenuItem type='separator'/>
+
+  <MenuItem type='menu' title='External Links'>
+       <MenuItem
+            type='url'
+            title='Genecards Viewer' 
+	    url='http://genecards.curie.fr/cgi-genecards/cardsearch.pl?search=#SourceID#'     
+            target='_blank'/>
+  </MenuItem>
+
+ </PropertyElementMenu>
+
+ <PropertyElementMenu object='DataElement' type='Probe'>
+  <MenuItem type='separator'/>
+
+  <MenuItem type='menu' title='External Links'>
+       <MenuItem
+            type='url'
+            title='SGD Viewer'
+	    url='http://db.yeastgenome.org/cgi-bin/locus.pl?locus=#Name#'    
+            target='_blank'/>
+  </MenuItem>
+
+ </PropertyElementMenu>
+
+<PropertyElementMenu object='DataElement' type='SNPs'>
+  <MenuItem type='separator'/>
+  <MenuItem type='menu' title='External Links'>
+
+      <MenuItem
+            type='url'
+            title='NCBI SNP(refSNP) Cluster report'
+            url='http://www.ncbi.nlm.nih.gov/SNP/snp_ref.cgi?type=rs&amp;rs=#RsID#'
+            target='_blank'/>
+
+       <MenuItem
+            type='url'
+            title='Working Draft (UCSC)' 
+	    url='@data'
+            target='_blank'>
+<token>
+http://www.genome.ucsc.edu/cgi-bin/hgTracks?position=chr#Chr#:</token>
+<sub>
+<property>Position</property>
+<token>1000</token>
+</sub>
+<token>-</token>
+<add>
+<property>Position</property>
+<token>1000</token>
+</add>
+       </MenuItem>
+
+       <MenuItem
+            type='url'
+            title='Ensembl ContigView'
+	    url='@data'
+            target='_blank'>
+<token>
+http://www.ensembl.org/Homo_sapiens/contigview?chr=#Chr#&amp;vc_start=</token>
+<sub>
+<property>Position</property>
+<token>1000</token>
+</sub>
+<token>&amp;vc_end=</token>
+<add>
+<property>Position</property>
+<token>1000</token>
+</add>
+       </MenuItem>
+
+       
+   </MenuItem>
+
+ </PropertyElementMenu>
+
+
+
+<PropertyElementMenu object='DataElement' type='Oligo'>
+  <MenuItem type='separator'/>
+
+  <MenuItem type='menu' title='External Links'>
+
+       <MenuItem
+            type='url'
+            title='Working Draft (UCSC)' 
+	    url='@data'
+            target='_blank'>
+<token>
+http://www.genome.ucsc.edu/cgi-bin/hgTracks?position=chr#Chr#:</token>
+<sub>
+<property>Position</property>
+<token>30</token>
+</sub>
+<token>-</token>
+<add>
+<property>Position</property>
+<token>30</token>
+</add>
+       </MenuItem>
+
+       <MenuItem
+            type='url'
+            title='Ensembl ContigView'
+	    url='@data'
+            target='_blank'>
+<token>
+http://www.ensembl.org/Homo_sapiens/contigview?chr=#Chr#&amp;vc_start=</token>
+<sub>
+<property>Position</property>
+<token>30</token>
+</sub>
+<token>&amp;vc_end=</token>
+<add>
+<property>Position</property>
+<token>30</token>
+</add>
+       </MenuItem>
+
+       <MenuItem
+            type='url'
+            title='Ensembl CytoView'
+	    url='@data'
+            target='_blank'>
+<token>
+http://www.ensembl.org/Homo_sapiens/cytoview?chr=#Chr#&amp;vc_start=</token>
+<sub>
+<property>Position</property>
+<token>30</token>
+</sub>
+<token>&amp;vc_end=</token>
+<add>
+<property>Position</property>
+<token>30</token>
+</add>
+       </MenuItem>
+   </MenuItem>
+
+ </PropertyElementMenu>
+
+
+ 
+<PropertyElementMenu object='MiniMapChr'>
+   <MenuItem type='menu' title='External Links'>
+       <MenuItem
+            type='url'
+            title='NCBI Map Viewer' 
+	    url='http://www.ncbi.nlm.nih.gov/mapview/maps.cgi?ORG=human&amp;MAPS=cntg-r,clone,sts,genes,comp&amp;CHR=#Name#'
+            target='_blank'/>
+	<MenuItem
+            type='url'
+            title='Database of Genomic Variants'
+            url='http://projects.tcag.ca/variation/cgi-bin/tbrowse/tbrowse?source=Variation&amp;table=Locus&amp;show=table&amp;keyword=&amp;flop=AND&amp;fcol=_C19&amp;fcomp==&amp;fkwd=chr#Name#&amp;cols='
+         target='_blank'/>
+   </MenuItem>
+ </PropertyElementMenu>
+
+ <PropertyElementMenu object='MiniMapBand'>
+
+   <MenuItem type='menu' title='External Links'>
+       <MenuItem
+            type='url'
+            title='NCBI Cancer Chromosomes'
+            url='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=cancerchromosomes&amp;term=%2B#Chr##Arm##Name#&amp;cmd=Search'
+            target='_blank'/>
+   </MenuItem>
+
+ </PropertyElementMenu>
+<PropertyElementMenu object='DataElement' type='miRNA'>
+   <MenuItem type='separator'/>
+
+   <MenuItem type='menu' title='External Links'>
+
+    <MenuItem
+             type='url'
+             title='miRBase::Sequences'
+              url='http://microrna.sanger.ac.uk/cgi-bin/sequences/mirna_entry.pl?acc=#Name#'
+             target='_blank'/>
+   <MenuItem
+             type='url'
+             title='Working Draft (UCSC)'
+             url='@data'
+             target='_blank'>
+<token>
+http://www.genome.ucsc.edu/cgi-bin/hgTracks?position=chr#Chr#:#Position#-</token>
+<add>
+<property>Position</property>
+<property>Size</property>
+</add>
+        </MenuItem>
+
+        <MenuItem
+             type='url'
+             title='Ensembl ContigView'
+             url='@data'
+             target='_blank'>
+<token>
+http://www.ensembl.org/Homo_sapiens/contigview?chr=#Chr#&amp;vc_start=#Position#&amp;vc_end=</token>
+<add>
+<property>Position</property>
+<property>Size</property>
+</add>
+        </MenuItem>
+
+</MenuItem>
+
+  </PropertyElementMenu>
+
+
+<PropertyElementMenu object='DataElement' type='GenomicVariants'>
+   <MenuItem type='separator'/>
+
+   <MenuItem type='menu' title='External Links'>
+
+
+        <MenuItem
+             type='url'
+             title='Database of Genomic Variants'
+             url='http://projects.tcag.ca/variation/cgi-bin/tbrowse/xview?source=hg18&amp;view=variation&amp;id=#Name#'
+             target='_blank'/>
+   <MenuItem
+             type='url'
+             title='Working Draft (UCSC)'
+             url='@data'
+             target='_blank'>
+<token>
+http://www.genome.ucsc.edu/cgi-bin/hgTracks?position=chr#Chr#:#Position#-</token>
+<add>
+<property>Position</property>
+<property>Size</property>
+</add>
+        </MenuItem>
+
+        <MenuItem
+             type='url'
+             title='Ensembl ContigView'
+             url='@data'
+             target='_blank'>
+<token>
+http://www.ensembl.org/Homo_sapiens/contigview?chr=#Chr#&amp;vc_start=#Position#&amp;vc_end=</token>
+<add>
+<property>Position</property>
+<property>Size</property>
+</add>
+        </MenuItem>
+
+</MenuItem>
+
+  </PropertyElementMenu>
+
+<PropertyElementMenu object='DataElement' type='Gene'>
+   <MenuItem type='separator'/>
+
+   <MenuItem type='menu' title='External Links'>
+
+
+        <MenuItem
+             type='url'
+             title='NCBI Entrez Gene'
+             url='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=gene&amp;cmd=search&amp;term=#GeneSymbol#'
+             target='_blank'/>
+
+        <MenuItem
+             type='url'
+             title='NCBI Entrez Nucleotide'
+             url='http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?val=#GeneSymbol#&amp;dopt=fasta'
+             target='_blank'/>
+
+   <MenuItem
+             type='url'
+             title='Working Draft (UCSC)'
+             url='@data'
+             target='_blank'>
+<token>
+http://www.genome.ucsc.edu/cgi-bin/hgTracks?position=chr#Chr#:#Position#-</token>
+<add>
+<property>Position</property>
+<property>Size</property>
+</add>
+        </MenuItem>
+
+        <MenuItem
+             type='url'
+             title='Ensembl ContigView'
+             url='@data'
+             target='_blank'>
+<token>
+http://www.ensembl.org/Homo_sapiens/contigview?chr=#Chr#&amp;vc_start=#Position#&amp;vc_end=</token>
+<add>
+<property>Position</property>
+<property>Size</property>
+</add>
+        </MenuItem>
+
+</MenuItem>
+
+  </PropertyElementMenu>
+
+
+
+
+ <UserDocumentation url='http://bioinfo-out.curie.fr/vamp/doc'/>
+
+ <Parameter key="eXcel:URL" value="http://bioinfo-out.curie.fr/cgi-bin/vamp/export.pl?format=xl"/>
+ <Parameter key="eXcelChrAvg:URL" value="http://bioinfo-out.curie.fr/cgi-bin/vamp/average_chr.pl?format=xl"/>
+<Parameter key="cluster:URL" value="http://bioinfo-out.curie.fr/cgi-bin/vamp/vamp_plugin.pl?baseFile=/bioinfo/users/bioinfo/projects/icgh_data/xml"/>
+<Parameter key="cluster:method" value="post"/>
+
+<Parameter key="diffAnalysis:URL" value="http://bioinfo-out.curie.fr/cgi-bin/vamp/vamp_plugin.pl?baseFile=/bioinfo/users/bioinfo/projects/icgh_data/xml"/>
+<Parameter key="diffAnalysis:method" value="post"/>
+
+<Parameter key="logo:URL" value="file:///Users/plarosa/Desktop/VAMP/images/logoCurie.3.jpg"/>
+<Parameter key="applet_home_img:URL" value="file:///Users/plarosa/Desktop/VAMP/images/applet_home.jpg"/>
+<Parameter key="cytoband:URL" value="file:///Users/plarosa/Desktop/VAMP/data/xml/cytoband/human"/>
+
+<!-- direct XML file access -->
+ <Parameter key="importData:baseURL" value="file:///Users/plarosa/Desktop/VAMP/data/xml/"/>
+
+ <GraphElementIcon type="CGH Array" url="file:///Users/plarosa/Desktop/VAMP/images/vamp_cgh.jpg"/>
+ <GraphElementIcon type="CGH Chromosome Merge" url="file:///Users/plarosa/Desktop/VAMP/images/vamp_cgh.jpg"/> 
+ <GraphElementIcon type="CGH Array Merge" url="file:///Users/plarosa/Desktop/VAMP/images/vamp_cgh.jpg"/>
+ <GraphElementIcon type="CGH Average" url="file:///Users/plarosa/Desktop/VAMP/images/vamp_cgh.jpg"/>
+
+ <GraphElementIcon type="Transcriptome" url="file:///Users/plarosa/Desktop/VAMP/images/trs.jpg"/>
+ <GraphElementIcon type="Transcriptome Average" url="file:///Users/plarosa/Desktop/VAMP/images/trs.jpg"/>
+ <GraphElementIcon type="Transcriptome Relative" url="file:///Users/plarosa/Desktop/VAMP/images/trs.jpg"/>
+ <GraphElementIcon type="Transcriptome Merge Relative" url="file:///Users/plarosa/Desktop/VAMP/images/trs.jpg"/>
+ <GraphElementIcon type="Transcriptome Chromosome Merge" url="file:///Users/plarosa/Desktop/VAMP/images/trs.jpg"/>
+ <GraphElementIcon type="LOH" url="file:///Users/plarosa/Desktop/VAMP/images/LOH.jpg"/>
+ <GraphElementIcon type="LOH Chromosome Merge" url="file:///Users/plarosa/Desktop/VAMP/images/LOH.jpg"/>
+
+<Cytoband organism="Human"
+          url="file:///Users/plarosa/Desktop/VAMP/data/xml/cytoband/human/mai_2004"
+          resolutions="400:550:850"
+          default_resolution="400"/>
+
+<Cytoband organism="Mouse"
+          url="file:///Users/plarosa/Desktop/VAMP/data/xml/cytoband/mouse"
+          resolutions="400"/>
+
+<PrintPageTemplate url="file:///Users/plarosa/Desktop/VAMP/configuration/xml/print-report.xml"/>
+<PrintPageTemplate url="file:///Users/plarosa/Desktop/VAMP/configuration/xml/print-annot.xml"/>
+<PrintPageTemplate url="file:///Users/plarosa/Desktop/VAMP/configuration/xml/print-simple-dendro.xml"/>
+<PrintPageTemplate url="file:///Users/plarosa/Desktop/VAMP/configuration/xml/print-profiles-dendro.xml"/>
+
+
+<Parameter key='GTCA:probeSetURL' value='http://genecards.curie.fr/cgi-genecards/cardsearch.pl?search=#SourceID#'/>
+
+<GeneSelectionProbeColumns type="Clone" columns="Name|Chr|Position|Size|Ratio"/>
+<GeneSelectionGeneColumns type="Gene" columns="GeneSymbol::http://www.genome.ucsc.edu/cgi-bin/hgTracks?position=chr#Chr#:#GeneBegin#-#GeneEnd#|Chr|GeneBegin|GeneEnd|Size|Strand|NbExons|mRNA_ID"/> 
+
+<BreakpointFrequencyColumns type="Breakpoint Barplot" columns="Name|Chr|Position|Size|Frequency|Density"/>
+
+<BreakpointFrequencyColumns type="Breakpoint Barplot Association" columns="Bkp Freq Asso"/>
+
+<BreakpointFrequencyColumns type="Breakpoint Association" columns="Begin1|End1|Data1|Chr1|Begin2|End2|Data2|Chr2|P-Value"/>
+
+</SystemConfig>
